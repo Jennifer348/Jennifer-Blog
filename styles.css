@@ -1,0 +1,194 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff;
+    padding: 80px 20px 40px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Site name */
+.site-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    margin-bottom: 40px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    margin-bottom: 60px;
+}
+
+.bio p {
+    margin-bottom: 1.2em;
+}
+
+.bio a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.bio a:hover {
+    color: #666;
+}
+
+/* Page titles */
+.page-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Writing page */
+.writing-list {
+    list-style: none;
+}
+
+.writing-list li {
+    margin-bottom: 12px;
+}
+
+.writing-list .date {
+    color: #666;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.writing-list .separator {
+    color: #999;
+    margin-right: 10px;
+}
+
+.writing-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.writing-list a:hover {
+    text-decoration: underline;
+}
+
+/* Photography page */
+.photography-list {
+    list-style: none;
+}
+
+.photography-list li {
+    margin-bottom: 12px;
+}
+
+.photography-list .year {
+    color: #666;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.photography-list .separator {
+    color: #999;
+    margin-right: 10px;
+}
+
+.photography-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.photography-list a:hover {
+    text-decoration: underline;
+}
+
+/* Blog post */
+.blog-post {
+    max-width: 100%;
+}
+
+.post-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.post-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.post-content p {
+    margin-bottom: 1.4em;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
